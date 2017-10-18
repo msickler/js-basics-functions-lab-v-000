@@ -22,6 +22,7 @@ function calculatesFarePrice(start, end) {
     break
     case distance > 2500
     return 'cannot travel that far'
-    
+    default: 
+    return "error!!!!!!"
   }
 }
