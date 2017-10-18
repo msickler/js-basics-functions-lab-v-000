@@ -11,11 +11,12 @@ function distanceTravelledInFeet(start, end) {
   return Math.abs(start - end) * 264
 }
 
-function calculatesFarePrice() {
-  switch(distance) {
+function calculatesFarePrice(start, end) {
+  distanceTravelledInFeet(start, end)
+  switch(fare) {
     case distance > 400 && distance <= 2000:
-    return  0.02 * distance 
-    break 
+    return  0.02 * distance
+    break
     case distance > 2000 && distance < 2500:
     return 'flat fare'
     break
