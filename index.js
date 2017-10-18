@@ -10,3 +10,17 @@ function distanceFromHqInFeet (distance) {
 function distanceTravelledInFeet(start, end) {
   return Math.abs(start - end) * 264
 }
+
+function calculatesFarePrice() {
+  switch(distance) {
+    case distance > 400 && distance <= 2000:
+    return  0.02 * distance 
+    break 
+    case distance > 2000 && distance < 2500:
+    return 'flat fare'
+    break
+    case distance > 2500
+    return 'cannot travel that far'
+    break
+  }
+}
