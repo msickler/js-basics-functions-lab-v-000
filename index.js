@@ -12,7 +12,7 @@ function distanceTravelledInFeet(start, end) {
 }
 
 function calculatesFarePrice(start, end) {
-  distanceTravelledInFeet(start, end)
+  distanceTravelledInFeet(start, end);
   switch(true) {
     case distance > 400 && distance <= 2000:
     return  0.02 * distance
