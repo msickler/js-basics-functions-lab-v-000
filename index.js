@@ -2,8 +2,9 @@
 function distanceFromHqInBlocks (distance) {
   return Math.abs(distance - 42)
 }
- 
-function distanceFromHqInFeet () {
-  distanceFromHqInBlocks();
-  // calls distanceFromHqInBlocks from inside the distanceFromHqInFeet function
+
+function distanceFromHqInFeet (distance) {
+  distanceFromHqInBlocks(distance); 
+  return (distance * 264)
+  
 }
