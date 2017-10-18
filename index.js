@@ -18,10 +18,10 @@ function calculatesFarePrice(start, end) {
     return  0.02 * distance
     break
     case distance > 2000 && distance < 2500:
-    return 'flat fare'
+    return 25
     break
     case distance > 2500
     return 'cannot travel that far'
-    break
+    
   }
 }
